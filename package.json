@@ -11,11 +11,12 @@
   "dependencies": {
     "expo": "~46.0.13",
     "expo-cli": "^6.0.6",
+    "expo-device": "~4.3.0",
     "expo-notifications": "~0.16.1",
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
     "react-native": "0.69.6",
-    "expo-device": "~4.3.0"
+    "react-native-web": "^0.18.9"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
