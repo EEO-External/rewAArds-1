@@ -34,7 +34,7 @@ useEffect(()=>{
 console.log("data", data)
 //console.log('1st city', data[flightNumbers][0].code)
 
-console.log(data[flightNumbers[1]].destination.city)
+// console.log(data[flightNumbers[1]].destination.city)
 
   return(
     <NavigationContainer>
