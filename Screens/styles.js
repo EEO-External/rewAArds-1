@@ -175,6 +175,7 @@ screen3_text:{
   fontWeight: 'bold',
   padding: 10,
   textAlign: 'center'
+  
 },
 screen4_text:{
   color: 'black',
