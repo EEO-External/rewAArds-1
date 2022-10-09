@@ -7,7 +7,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import styles from "./styles";
 
 
-function Seat() {
+function Checkin() {
     const navigation = useNavigation();
     const [setLastName, lastName] =  useState("")
     const [setRecordLocator, recordLocator] =  useState("")
@@ -98,4 +98,4 @@ return(
 
 }
 
-export default Seat;
+export default Checkin;

@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 
 
-function SignUp() {
+function Welcome() {
     const navigation = useNavigation();
     const [setLastName, lastName] =  useState("")
     const [setRecordLocator, recordLocator] =  useState("")
@@ -35,7 +35,7 @@ useEffect(()=>{
  
 return(
     <View style={styles.container}>
-        <Text style={{justifyContent:'center', textalign: 'center', color: 'black',fontSize: 20, fontWeight: 'bold'}}>Welcome to AAdvantage rewAArds!</Text>
+        <Text style={{justifyContent:'center', textalign: 'center', color: 'black',fontSize: 20, fontWeight: 'bold',}}>Welcome to AAdvantage rewAArds!</Text>
         <KeyboardAwareScrollView
           style={{ flex: 1, width: "100%", backgroundColor: "white" }}
           keyboardShouldPersistTaps="always"
@@ -46,7 +46,11 @@ return(
                 source={require('../assets/airplane-icon.png')} />
             <Text style={styles.screen1_text}>Hello Jack!</Text>
             <Text style={styles.screen1_text}>You're all set for your trip</Text>
+<<<<<<< HEAD:Screens/SignUp.js
             <Text style={styles.screen1_text}>from {data[0]?.origin?.code}-{data[0]?.destination?.code}</Text>
+=======
+            <Text style={styles.screen1_text}>from DFW-JFK</Text>
+>>>>>>> f7d34441b7750ac255181675d2d90e376072c4ca:Screens/Welcome.js
         </View>
         <Text style={{color: 'black',fontSize: 18, fontWeight: 'bold', marginLeft: 30}}>Last Name</Text>
         <TextInput
@@ -92,4 +96,4 @@ return(
 
 }
 
-export default SignUp;
+export default Welcome;
