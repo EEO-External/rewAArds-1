@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 
 
-function SignUp() {
+function Welcome() {
     const navigation = useNavigation();
     const [setLastName, lastName] =  useState("")
     const [setRecordLocator, recordLocator] =  useState("")
@@ -14,7 +14,7 @@ function SignUp() {
  
 return(
     <View style={styles.container}>
-        <Text style={{justifyContent:'center', textalign: 'center', color: 'black',fontSize: 20, fontWeight: 'bold'}}>Welcome to AAdvantage rewAArds!</Text>
+        <Text style={{justifyContent:'center', textalign: 'center', color: 'black',fontSize: 20, fontWeight: 'bold',}}>Welcome to AAdvantage rewAArds!</Text>
         <KeyboardAwareScrollView
           style={{ flex: 1, width: "100%", backgroundColor: "white" }}
           keyboardShouldPersistTaps="always"
@@ -25,7 +25,7 @@ return(
                 source={require('../assets/airplane-icon.png')} />
             <Text style={styles.screen1_text}>Hello Jack!</Text>
             <Text style={styles.screen1_text}>You're all set for your trip</Text>
-            <Text style={styles.screen1_text}>from ATL-DFW</Text>
+            <Text style={styles.screen1_text}>from DFW-JFK</Text>
         </View>
         <Text style={{color: 'black',fontSize: 18, fontWeight: 'bold', marginLeft: 30}}>Last Name</Text>
         <TextInput
@@ -71,4 +71,4 @@ return(
 
 }
 
-export default SignUp;
+export default Welcome;
