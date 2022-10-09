@@ -18,33 +18,7 @@ const App = () => {
   const [data1, setData1] = useState([]);
   const [flightLocation, setFlightLocation] = useState([]);
   const [flightNumbers, setFlightNumbers] = useState([]);
-
-  const getLocationData = () =>{
-    fetch("https://rewaards.herokuapp.com/airports/all")
-    .then(response => response.json())
-    .then((result) => {
-      setData(result)
-      setFlightLocation(Object.keys(data))
-    })
-    .catch(error => console.log('error', error));
-  }
-
-  const getFlightNo = () =>{
-    fetch("https://rewaards.herokuapp.com/flights?date=2017-08-29&destination=DFW")
-    .then(response => response.json())
-    .then((result) => {
-      setData1(result)
-      setFlightNumbers(Object.keys(data1))
-    })
-    .catch(error => console.log('error', error));
-    
-  }
-
-  useEffect(()=>{
-    getLocationData()
-    getFlightNo()
-  }, [])
-
+  
   return(
     <NavigationContainer>
       <Stack.Navigator>

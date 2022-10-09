@@ -11,6 +11,27 @@ function Welcome() {
     const [setLastName, lastName] =  useState("")
     const [setRecordLocator, recordLocator] =  useState("")
     const [setPassword, password] =  useState("")
+
+    const [data, setData] = useState([]);
+  const [name, setName] = useState([]);
+  const [flightNumbers, setFlightNumbers] = useState([]);
+  
+const getFlightData = () =>{
+  fetch("https://rewaards.herokuapp.com/flights?date=2021-01-01")
+  .then(response => response.json())
+  .then((result) => {
+    setData(result)
+
+  }
+  )
+  .catch(error => console.log('error', error));
+}
+
+useEffect(()=>{
+  getFlightData()
+}, [])
+
+
  
 return(
     <View style={styles.container}>
@@ -25,7 +46,11 @@ return(
                 source={require('../assets/airplane-icon.png')} />
             <Text style={styles.screen1_text}>Hello Jack!</Text>
             <Text style={styles.screen1_text}>You're all set for your trip</Text>
+<<<<<<< HEAD:Screens/SignUp.js
+            <Text style={styles.screen1_text}>from {data[0]?.origin?.code}-{data[0]?.destination?.code}</Text>
+=======
             <Text style={styles.screen1_text}>from DFW-JFK</Text>
+>>>>>>> f7d34441b7750ac255181675d2d90e376072c4ca:Screens/Welcome.js
         </View>
         <Text style={{color: 'black',fontSize: 18, fontWeight: 'bold', marginLeft: 30}}>Last Name</Text>
         <TextInput
