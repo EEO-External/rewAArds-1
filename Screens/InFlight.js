@@ -37,10 +37,16 @@ return(
                 source={require('../assets/subscribe.png')} />
             <Text style={styles.screen1_text}>Don't know how to use your miles? Get wifi on this and every AA flight! </Text>
         </View>
+
+        <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.navigate("")}
+          >
+            <Text style={styles.buttonTitle}>Purchase</Text>
+          </TouchableOpacity>
         </KeyboardAwareScrollView>
     </View>
-) 
-        
+)        
 }   
 export default Inflight;
     

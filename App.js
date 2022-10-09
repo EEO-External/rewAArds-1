@@ -45,10 +45,6 @@ const App = () => {
     getFlightNo()
   }, [])
 
-  //console.log("data", data)
-
-// console.log(data[flightNumbers[1]].destination.city)
-
   return(
     <NavigationContainer>
       <Stack.Navigator>
