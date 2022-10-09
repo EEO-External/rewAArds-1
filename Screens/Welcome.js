@@ -51,7 +51,6 @@ return(
             style={styles.input}
             placeholder="Enter Last Name"
             placeholderTextColor="#aaaaaa"
-            onChangeText={(text) => setLastName(text)}
             value={lastName}
             underlineColorAndroid="transparent"
             autoCapitalize="none"
@@ -61,7 +60,7 @@ return(
         style={styles.input}
         placeholder="Enter Record Locator"
         placeholderTextColor="#aaaaaa"
-        onChangeText={(text) => setRecordLocator(text)}
+        
         value={recordLocator}
         underlineColorAndroid="transparent"
         autoCapitalize="none"
@@ -71,7 +70,7 @@ return(
         style={styles.input}
         placeholder="Enter Password"
         placeholderTextColor="#aaaaaa"
-        onChangeText={(text) => setPassword(text)}
+        
         value={password}
         underlineColorAndroid="transparent"
         autoCapitalize="none"
