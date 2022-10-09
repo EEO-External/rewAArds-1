@@ -13,8 +13,6 @@ const App = () => {
   const [data, setData] = useState([]);
   const [name, setName] = useState([]);
   const [flightNumbers, setFlightNumbers] = useState([]);
-
-  
   
 const getData = () =>{
   fetch("http://localhost:4000/flights?date=2021-01-01")
@@ -34,11 +32,6 @@ useEffect(()=>{
 console.log("data", data)
 
 // console.log(data[flightNumbers[1]].destination.city)
-
-
-
-
-  
 
     return(
       <NavigationContainer>
@@ -63,22 +56,15 @@ console.log("data", data)
 
 };
 
-
-
-
-
 const styles = StyleSheet.create({
 
   pageContainer: {
     justifyContent: 'center',
     alignItems: 'center',
     flex: 1,
-
-
   },
 
 })
-
 
 export default App;
 
