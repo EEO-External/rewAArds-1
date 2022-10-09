@@ -1,18 +1,18 @@
 import { StyleSheet } from 'react-native';
 
-export default StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        backgroundColor: 'white',
-
-
+export default StyleSheet.create({ 
 container: {
     flex: 1,
     alignItems: 'center',
     backgroundColor: 'white',
     paddingTop: 100
 
+},
+container1: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: 'green',
+    paddingTop: 100
 },
 input: {
     height: 48,
@@ -25,7 +25,7 @@ input: {
     marginRight: 30,
     paddingLeft: 19,
     borderColor: 'black',
-    borderWidth: 0.7,
+    borderWidth: 3.5,
     textAlign: 'center'
 },
 button: {
@@ -44,5 +44,11 @@ color: 'white',
 fontSize: 16,
 fontWeight: "bold"
 },
+
+screen1_text:{
+    color: 'black',
+    fontSize: 18,
+    fontWeight: 'bold',
+}
 
 })

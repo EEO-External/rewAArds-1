@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 
 
- function Screen_2() {
+function Screen_2() {
     const navigation = useNavigation();
     const [setLastName, lastName] =  useState("")
     const [setRecordLocator, recordLocator] =  useState("")

@@ -17,7 +17,7 @@ return(
         <KeyboardAwareScrollView>
             <Text>Screen_3</Text>
          
-          </KeyboardAwareScrollView>
+        </KeyboardAwareScrollView>
     </View>
 )
 
