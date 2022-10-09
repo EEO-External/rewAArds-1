@@ -7,7 +7,6 @@ container: {
     alignItems: 'center',
     backgroundColor: 'white',
     paddingTop: 100
-
 },
 input: {
     height: 48,
@@ -20,7 +19,7 @@ input: {
     marginRight: 30,
     paddingLeft: 19,
     borderColor: 'black',
-    borderWidth: 0.7,
+    borderWidth: 3.5,
     textAlign: 'center'
 },
 button: {
@@ -96,13 +95,15 @@ itemCard: {
     fontSize: 21,
     color: 'black',
     marginTop: 12,
-
     marginLeft: 20,
     marginRight: 20,
     paddingLeft: 10,
     fontWeight: 'bold'
-  }
+  },
 
-
-
+screen1_text:{
+    color: 'black',
+    fontSize: 18,
+    fontWeight: 'bold',
+}
 })
