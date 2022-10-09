@@ -16,10 +16,10 @@ return(
     <View style={styles.container}>
         <Text style={{justifyContent:'center', textalign: 'center', color: 'black',fontSize: 20, fontWeight: 'bold'}}>Welcome to AAdvantage rewAArds!</Text>
         <KeyboardAwareScrollView
-          style={{ flex: 1, width: "100%", backgroundColor: "#Ffd37c" }}
+          style={{ flex: 1, width: "100%", backgroundColor: "white" }}
           keyboardShouldPersistTaps="always"
         >
-        <View style={{borderWidth: 3.5, margin: 30, flex: 1, backgroundColor:'#Ffd37c', height:200, alignItems: 'center', justifyContent:'center', padding: 20}}>
+        <View style={{borderWidth: 3.5, margin: 30, flex: 1, backgroundColor:'white', height:200, alignItems: 'center', justifyContent:'center', padding: 20}}>
             <Image 
                 style={{width: 50, height:50}} 
                 source={require('../assets/airplane-icon.png')} />
@@ -57,7 +57,7 @@ return(
         underlineColorAndroid="transparent"
         autoCapitalize="none"
         />
-        <Text style={{fontSize: 15, textAlign:'center', }}>Password Strength: Strong</Text>
+
 
         <TouchableOpacity
             style={styles.button}

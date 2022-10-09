@@ -97,8 +97,9 @@ return(
 
         <TouchableOpacity
             style={styles.button}
+            onPress={() => navigation.navigate("Screen_3")}
           >
-            <Text style={styles.buttonTitle}>Add to Wallet</Text>
+            <Text style={styles.buttonTitle}>Purchase</Text>
           </TouchableOpacity>
          
           </KeyboardAwareScrollView>
