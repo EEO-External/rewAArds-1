@@ -7,7 +7,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import styles from "./styles";
 
 
-function Screen_3() {
+function Seat() {
     const navigation = useNavigation();
     const [setLastName, lastName] =  useState("")
     const [setRecordLocator, recordLocator] =  useState("")
@@ -85,7 +85,9 @@ return(
      </View>
     </TouchableOpacity>
     </View>
-    <TouchableOpacity style={styles.button}>
+    <TouchableOpacity style={styles.button}
+     onPress={() => navigation.navigate("SignUp")}
+    >
         <Text style={styles.buttonTitle}>Check In</Text> 
     </TouchableOpacity>
    
@@ -96,4 +98,4 @@ return(
 
 }
 
-export default Screen_3;
+export default Seat;

@@ -7,7 +7,7 @@ import card from "../assets/card.png"
 import styles from "./styles";
 
 
-function Screen_2() {
+function InFlight() {
     const navigation = useNavigation();
     const [setLastName, lastName] =  useState("")
     const [setRecordLocator, recordLocator] =  useState("")
@@ -109,4 +109,4 @@ return(
 
 }
 
-export default Screen_2;
+export default InFlight;
