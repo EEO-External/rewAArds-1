@@ -35,7 +35,7 @@ return(
         style={styles.thumb}
         source={require("../assets/wifi.png")}
       />
-      <TouchableOpacity onPress = {() => navigation.navigate("Screen_4")}>
+      <TouchableOpacity onPress = {() => navigation.navigate("Inflight")}>
       <View style={styles.infoContainer}>
         <Text style={styles.name}>Wifi</Text>
         <Text style={styles.price}>$ 10</Text>
@@ -100,7 +100,7 @@ return(
 
         <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate("Screen_3")}
+            onPress={() => navigation.navigate("Inflight")}
           >
             <Text style={styles.buttonTitle}>Purchase</Text>
           </TouchableOpacity>

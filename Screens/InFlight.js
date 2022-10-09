@@ -6,7 +6,6 @@ import styles from "./styles.js";
 export function Inflight() {
  
 
-
 return(
     <View style={styles.container}>
         <Text style={{justifyContent:'center', textalign: 'center', color: 'black',fontSize: 20, fontWeight: 'bold',}}>Welcome to AAdvantage Inflight!</Text>
@@ -40,9 +39,8 @@ return(
         </View>
         </KeyboardAwareScrollView>
     </View>
-)    
-     
-}
-    
+) 
+        
+}   
 export default Inflight;
     

@@ -161,5 +161,25 @@ screen1_text:{
     color: 'black',
     fontSize: 18,
     fontWeight: 'bold',
-}
+},
+screen2_text:{
+  color: 'black',
+  fontSize: 22,
+  fontWeight: 'bold',
+  padding: 10,
+  textAlign: 'center'
+},
+screen3_text:{
+  color: 'black',
+  fontSize: 12,
+  fontWeight: 'bold',
+  padding: 10,
+  textAlign: 'center'
+},
+screen4_text:{
+  color: 'black',
+  fontSize: 18,
+  fontWeight: 'bold',
+  textAlign: 'center'
+},
 })
