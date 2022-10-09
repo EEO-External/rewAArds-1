@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 
 
-function Screen_1() {
+function SignUp() {
     const navigation = useNavigation();
     const [setLastName, lastName] =  useState("")
     const [setRecordLocator, recordLocator] =  useState("")
@@ -61,7 +61,7 @@ return(
 
         <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate("Screen_2")}
+            onPress={() => navigation.navigate("InFlight")}
           >
             <Text style={styles.buttonTitle}>Join AAdvantage in One Click</Text>
         </TouchableOpacity>
@@ -71,4 +71,4 @@ return(
 
 }
 
-export default Screen_1;
+export default SignUp;

@@ -2,12 +2,14 @@ import { TouchableOpacity, useWindowDimension } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack'
-import Screen_1 from './Screens/Screen_1';
-import Screen_2 from './Screens/Screen_2';
-import Screen_3 from './Screens/Screen_3';
+import Screen_1 from './Screens/SignUp';
+import Screen_2 from './Screens/InFlight';
+import Seat from './Screens/Seat';
 import Screen_4 from './Screens/Screen_4';
 import Screen_5 from './Screens/Screen_5';
 import { NavigationContainer } from '@react-navigation/native';
+import InFlight from './Screens/InFlight';
+import SignUp from './Screens/SignUp';
 
 
 const App = () => {
@@ -40,15 +42,15 @@ console.log("data", data)
     <NavigationContainer>
       <Stack.Navigator>
         <>
-        <Stack.Screen name="Screen_1" options={{
+        <Stack.Screen name="Seat" options={{
           headerShown: false
-        }} component={Screen_1}/>
-        <Stack.Screen name="Screen_2" options={{
+        }} component={Seat}/>
+        <Stack.Screen name="InFlight" options={{
           headerShown: false
-        }} component={Screen_2}/>
-        <Stack.Screen name="Screen_3" options={{
+        }} component={InFlight}/>
+        <Stack.Screen name="SignUp" options={{
           headerShown: false
-        }} component={Screen_3}/>
+        }} component={SignUp}/>
         <Stack.Screen name="Screen_4" options={{
           headerShown: false
         }} component={Screen_4}/>
