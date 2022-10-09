@@ -86,7 +86,7 @@ return(
 
         <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate("InFlight")}
+            onPress={() => navigation.navigate("CardBoard")}
           >
             <Text style={styles.buttonTitle}>Join AAdvantage in One Click</Text>
         </TouchableOpacity>
