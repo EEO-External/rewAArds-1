@@ -19,12 +19,6 @@ const App = () => {
   const [flightLocation, setFlightLocation] = useState([]);
   const [flightNumbers, setFlightNumbers] = useState([]);
   
-
-
-  //console.log("data", data)
-
-//console.log(data[flightNumbers[1]]?.destination?.city)
-
   return(
     <NavigationContainer>
       <Stack.Navigator>
