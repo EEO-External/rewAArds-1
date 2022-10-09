@@ -3,7 +3,7 @@ import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view
 import { View, TextInput, TouchableOpacity, Text, Image} from "react-native";
 import styles from "./styles.js";
 
-export function Screen_4() {
+export function Inflight() {
  
 
 
@@ -44,5 +44,5 @@ return(
      
 }
     
-export default Screen_4;
+export default Inflight;
     

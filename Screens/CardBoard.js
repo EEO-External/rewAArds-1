@@ -7,7 +7,7 @@ import card from "../assets/card.png"
 import styles from "./styles";
 
 
-function Screen_2() {
+function CardBoard() {
     const navigation = useNavigation();
     const [setLastName, lastName] =  useState("")
     const [setRecordLocator, recordLocator] =  useState("")
@@ -100,8 +100,9 @@ return(
 
         <TouchableOpacity
             style={styles.button}
+            onPress={() => navigation.navigate("Screen_3")}
           >
-            <Text style={styles.buttonTitle}>Add to Wallet</Text>
+            <Text style={styles.buttonTitle}>Purchase</Text>
           </TouchableOpacity>
          
           </KeyboardAwareScrollView>
@@ -109,4 +110,4 @@ return(
 )
 }
 
-export default Screen_2;
+export default CardBoard;

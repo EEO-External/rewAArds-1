@@ -4,7 +4,7 @@ import { View, TextInput, TouchableOpacity, Text, Image} from "react-native";
 import styles from "./styles.js";
 
 
-export function Screen_5() {
+export function BuyFlight() {
  
 return(
     <View style={styles.container}>
@@ -28,5 +28,5 @@ return(
     
 }
     
-export default Screen_5;
+export default BuyFlight;
     
