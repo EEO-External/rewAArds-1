@@ -17,7 +17,7 @@ const App = () => {
   const [flightNumbers, setFlightNumbers] = useState([]);
   
 const getFlightData = () =>{
-  fetch("http://localhost:4000/flights?date=2021-01-01")
+  fetch("https://rewaards.herokuapp.com/airports/all")
   .then(response => response.json())
   .then((result) => {
     setData(result)
@@ -32,8 +32,9 @@ useEffect(()=>{
 }, [])
 
 console.log("data", data)
+//console.log('1st city', data[flightNumbers][0].code)
 
-//console.log(data[flightNumbers[1]].destination.city)
+console.log(data[flightNumbers[1]].destination.city)
 
   return(
     <NavigationContainer>
