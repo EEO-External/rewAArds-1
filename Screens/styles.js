@@ -175,6 +175,7 @@ screen3_text:{
   fontWeight: 'bold',
   padding: 10,
   textAlign: 'center'
+  
 },
 gate_text:{
     color: 'white',
