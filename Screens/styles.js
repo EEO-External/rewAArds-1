@@ -163,7 +163,7 @@ screen1_text:{
     fontWeight: 'bold',
 },
 screen2_text:{
-  color: 'black',
+  color: 'white',
   fontSize: 22,
   fontWeight: 'bold',
   padding: 10,
@@ -177,6 +177,16 @@ screen3_text:{
   textAlign: 'center'
   
 },
+gate_text:{
+    color: 'white',
+    fontSize: 14,
+    fontWeight: 'bold',
+    padding: 10,
+    textAlign: 'center',
+    alignContent: 'center',
+    marginRight: 3
+
+  },
 screen4_text:{
   color: 'black',
   fontSize: 18,

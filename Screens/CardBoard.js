@@ -52,7 +52,7 @@ return(
       <Text style={{justifyContent:'center', textalign: 'center', color: 'black',fontSize: 20, fontWeight: 'bold',}}>Your Personal Shopping Mall!</Text>
         <KeyboardAwareScrollView>
             <Text style={styles.heading}>5000 miles = $50 </Text><Text style={{ fontSize: 21,
-    color: 'black',
+    color: '#1f7cb1',
     marginLeft: 20,
     marginRight: 20,
     paddingLeft: 12,
