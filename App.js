@@ -5,7 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Welcome from './Screens/Welcome';
 import CardBoard from './Screens/CardBoard';
 import Checkin from './Screens/Checkin';
-import Inflight from './Screens/Inflight';
+import InFlight from './Screens/Inflight';
 import BuyFlight from './Screens/BuyFlight';
 import { NavigationContainer } from '@react-navigation/native';
 

@@ -16,6 +16,7 @@ function CardBoard() {
   const [customerNotificationData, setData1] = useState([]);
   const [merchantPaymentMethodByLocData, setData2] = useState([]);
   const [customerLocationData, setData3] = useState([]);
+  const [currencyConversionData, setData4] = useState([]);
   ;
 
   var merchantLocationId = new Headers();
@@ -46,6 +47,12 @@ function CardBoard() {
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
 
+  var currencyConversion = new Headers();
+  currencyConversion.append("Authorization", "OAuth oauth_consumer_key=\"BROZ0ZpHlz-0I_SL_TzfIjZDht9dOA_Tqo4Ht_Dq75293b78%21e6c0de455796494f8c357128f52384a40000000000000000\",oauth_signature_method=\"RSA-SHA256\",oauth_timestamp=\"1665327731\",oauth_nonce=\"NX80BPWKKTd\",oauth_version=\"1.0\",oauth_body_hash=\"47DEQpj8HBSa%2B%2FTImW%2B5JCeuQeRkm5NMpJWZG3hSuFU%3D\",oauth_signature=\"eRbupwLlIxlYjJhhV2IiE4hXldCM0kVUR3eq5WgtGrUHYjoqvapUlOcdBceiLD9e8mp9CXR9qWjVa7RS%2F6pHo%2B3AG3J%2BsCeKXXWltvWLfO01wHV0f7vAcW7pFrnDHBZQao4A%2FK2l2SS%2FDbczEy0SQSvlBzbPC3blCG7V%2BnDqzjfCjQKuJhoZ%2F1zhcHfHscwBHqKkHl65copa5vlbfMPOv5Rya6uG1RmbjLJChzWHgnrhXWUDJgWDdxVzQyjPJZjNAcoLVNEcnjPTe1ZOlvpYJJZdPf3cjZpQm3xIOOjCHF8ybKshAt%2FMPLKNPaZBZ9o83FaQSphPbkcPudjWgnqkmQ%3D%3D\"");
+  fetch("https://sandbox.api.mastercard.com/merchants/v1/countrysubdivision?details=acceptance.paypass&country=USA&format=JSON")
+    .then(response => response.json())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
   
 return(
     <View style={styles.container}>
