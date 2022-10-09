@@ -13,33 +13,55 @@ import { NavigationContainer } from '@react-navigation/native';
 const App = () => {
   const Stack = createStackNavigator();
   const [data, setData] = useState([]);
-  const [name, setName] = useState([]);
+  const [data1, setData1] = useState([]);
+  const [flightLocation, setFlightLocation] = useState([]);
   const [flightNumbers, setFlightNumbers] = useState([]);
-  
-const getFlightData = () =>{
-  fetch("https://rewaards.herokuapp.com/airports/all")
-  .then(response => response.json())
-  .then((result) => {
-    setData(result)
-    setFlightNumbers(Object.keys(data))
+
+  const getLocationData = () =>{
+    fetch("https://rewaards.herokuapp.com/airports/all")
+    .then(response => response.json())
+    .then((result) => {
+      setData(result)
+      setFlightLocation(Object.keys(data))
+    })
+    .catch(error => console.log('error', error));
   }
-  )
-  .catch(error => console.log('error', error));
-}
 
-useEffect(()=>{
-  getFlightData()
-}, [])
+  const getFlightNo = () =>{
+    fetch("https://rewaards.herokuapp.com/flights?date=2017-08-29&destination=DFW")
+    .then(response => response.json())
+    .then((result) => {
+      setData1(result)
+      setFlightNumbers(Object.keys(data1))
+    })
+    .catch(error => console.log('error', error));
+    
+  }
 
-console.log("data", data)
-//console.log('1st city', data[flightNumbers][0].code)
+  useEffect(()=>{
+    getLocationData()
+    getFlightNo()
+  }, [])
 
-console.log(data[flightNumbers[1]].destination.city)
+  //console.log("data", data)
+
+  // var origin_location = data[flightLocation[0]]['code']
+  // var destination_location = data[flightLocation[1]]['code']
+  // var origin_city = data[flightLocation[0]]['city']
+  // var destination_city = data[flightLocation[1]]['city']
+  // var duration = data1[flightNumbers[0]]['duration']
+  // var distance = data1[flightNumbers[0]]['distance']
+  // var flight = data1[flightNumbers[0]]['flightNumber']
+  //console.log("data1", data1)
+  //console.log("data", data1[flightNumbers[0]]['flightNumber'])
 
   return(
     <NavigationContainer>
       <Stack.Navigator>
         <>
+        <Stack.Screen name="Screen_5" options={{
+          headerShown: false
+        }} component={Screen_5}/>
         <Stack.Screen name="Screen_1" options={{
           headerShown: false
         }} component={Screen_1}/>
@@ -52,20 +74,14 @@ console.log(data[flightNumbers[1]].destination.city)
         <Stack.Screen name="Screen_4" options={{
           headerShown: false
         }} component={Screen_4}/>
-        <Stack.Screen name="Screen_5" options={{
-          headerShown: false
-        }} component={Screen_5}/>
+       
         </>
       </Stack.Navigator>
-
     </NavigationContainer>
-    
-  
   )
 };
 
 const styles = StyleSheet.create({
-
   pageContainer: {
     justifyContent: 'center',
     alignItems: 'center',

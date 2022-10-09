@@ -12,7 +12,8 @@ function Screen_2() {
     const [setLastName, lastName] =  useState("")
     const [setRecordLocator, recordLocator] =  useState("")
     const [setPassword, password] =  useState("")
- 
+  ;
+
 return(
     <View style={styles.container}>
         <KeyboardAwareScrollView>
@@ -21,7 +22,7 @@ return(
     marginLeft: 20,
     marginRight: 20,
     paddingLeft: 12,
-    fontWeight: '300'}}>You have 5000 miles{'\n'}as of 10/08/22</Text>
+    fontWeight: '300'}}>You have 5000 miles{'\n'}as of this time, 10/08/22</Text>
         <Image
             style={styles.card}
             source={require("../assets/card.png")}
@@ -34,10 +35,12 @@ return(
         style={styles.thumb}
         source={require("../assets/wifi.png")}
       />
+      <TouchableOpacity onPress = {() => navigation.navigate("Screen_4")}>
       <View style={styles.infoContainer}>
         <Text style={styles.name}>Wifi</Text>
         <Text style={styles.price}>$ 10</Text>
       </View>
+      </TouchableOpacity>
     </TouchableOpacity>
     <TouchableOpacity style={styles.itemCard} >
       <Image
@@ -63,7 +66,7 @@ return(
 <Text style={styles.heading}>Stores near you</Text>
 <View style={styles.itemFlex}>
 
-<TouchableOpacity style={styles.itemCard} >
+    <TouchableOpacity style={styles.itemCard} >
       <Image
         style={styles.thumb}
         source={require("../assets/wifi.png")}
@@ -93,7 +96,7 @@ return(
         
       </View>
     </TouchableOpacity>
-</View>
+    </View>
 
         <TouchableOpacity
             style={styles.button}
@@ -104,8 +107,6 @@ return(
           </KeyboardAwareScrollView>
     </View>
 )
-
-
 }
 
 export default Screen_2;
